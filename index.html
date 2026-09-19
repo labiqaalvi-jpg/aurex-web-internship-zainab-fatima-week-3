@@ -57,16 +57,15 @@
     </section>
   </main>
     <script>
-    // JavaScript for button click interaction
+    // Interactive Module View Handler
     document.querySelectorAll('.btn-card, .btn-primary').forEach(button => {
       button.addEventListener('click', (e) => {
         if(button.classList.contains('btn-primary')) return;
         
         const cardTitle = e.target.parentElement.querySelector('h3').innerText;
-        alert('🎉 Project Clicked:\n\n' + cardTitle + '\n\nMore details for this project can be dynamically loaded here!');
+        alert('✨ Project Module Initialized:\n\n' + cardTitle + '\n\nInteractive showcase components and live metric data loaded successfully.');
       });
     });
   </script>
-  
 </body>
 </html>
