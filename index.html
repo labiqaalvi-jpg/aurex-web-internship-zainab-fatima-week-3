@@ -56,14 +56,14 @@
       </div>
     </section>
   </main>
-  <script>
-    // Buttons par click interaction ke liye JavaScript
+    <script>
+    // JavaScript for button click interaction
     document.querySelectorAll('.btn-card, .btn-primary').forEach(button => {
       button.addEventListener('click', (e) => {
         if(button.classList.contains('btn-primary')) return;
         
         const cardTitle = e.target.parentElement.querySelector('h3').innerText;
-        alert('🎉 Project Clicked:\n\n' + cardTitle + '\n\nIs project ki details yahan dynamically show ho sakti hain!');
+        alert('🎉 Project Clicked:\n\n' + cardTitle + '\n\nMore details for this project can be dynamically loaded here!');
       });
     });
   </script>
